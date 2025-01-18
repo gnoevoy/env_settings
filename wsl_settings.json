@@ -1,0 +1,60 @@
+{
+    // GENERAL SETTING
+    
+    // setting on apperance tab, cosmetic things
+    "workbench.sideBar.location": "left",
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "none",
+    "editor.wordWrapColumn": 160,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "editor.accessibilitySupport": "off",
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.renderControlCharacters": false,
+    "explorer.confirmDragAndDrop": false,
+    "breadcrumbs.enabled": false,
+    "window.commandCenter": false,
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+
+    // terminal settings 
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "none",
+    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.minimumContrastRatio": 4.5,
+    "terminal.integrated.localEchoStyle": "dim",
+    "terminal.integrated.fontWeightBold": "bold",
+    "terminal.integrated.smoothScrolling": true,
+
+    // python
+    "python.defaultInterpreterPath": "/home/bars1k/base_env/bin/python",
+    "python.analysis.autoSearchPaths": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true
+    },
+
+
+    // EXTENSIONS SETTINGS
+
+    // git lens - work with comparing git commits (not configured)
+    "gitlens.graph.layout": "editor",
+    "gitlens.graph.onlyFollowFirstParent": true,
+    "gitlens.graph.minimap.enabled": false,
+
+    // django html - didnt touched
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
+   
+
+
+    // VIM - all vim setting locate in general user setting (not wsl)
+
+   
+}
