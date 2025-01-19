@@ -1,0 +1,24 @@
+Google ===========================
+
+Select previous tab - Alt + H
+Select next tab - Alt + L
+Move current tab left - Alt + J
+Move current tab right - Alt + K
+Close current tab - Alt + I
+New tab - Alt + N
+Duplicate current tab - Alt + O
+Go back to the previous page - Alt + Comma
+Go forward to the next page - Alt + Period
+Pin / Unpin current tab - Alt + P
+Reload tab - Alt + U
+
+Windows ==========================
+
+open chrome - Ctrl + 2
+open Vs Code - Ctrl + 3
+switch tabs - Alt + Tab
+hide all tabs - Windows + d
+close program - Alt + F4
+hide tab - Windows + Down
+full screen for tab - Windows + Up
+Start menu - Windows

@@ -10,7 +10,7 @@
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "none",
     "editor.wordWrapColumn": 160,
-    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.hideUnchangedRegions.enabled": false,
     "editor.accessibilitySupport": "off",
     "editor.minimap.enabled": false,
     "editor.stickyScroll.enabled": false,
@@ -24,12 +24,15 @@
 
     // terminal settings 
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorStyleInactive": "none",
     "terminal.integrated.lineHeight": 1.1,
     "terminal.integrated.minimumContrastRatio": 4.5,
     "terminal.integrated.localEchoStyle": "dim",
     "terminal.integrated.fontWeightBold": "bold",
     "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.suggest.enabled": true,
+    "terminal.integrated.suggest.enableExtensionCompletions": true,
+    "terminal.integrated.tabs.defaultIcon": "terminal-bash",
+    "terminal.integrated.cursorStyleInactive": "none",
 
     // python
     "python.defaultInterpreterPath": "/home/bars1k/base_env/bin/python",
