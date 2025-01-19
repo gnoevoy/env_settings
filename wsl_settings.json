@@ -33,6 +33,8 @@
     "terminal.integrated.suggest.enableExtensionCompletions": true,
     "terminal.integrated.tabs.defaultIcon": "terminal-bash",
     "terminal.integrated.cursorStyleInactive": "none",
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.copyOnSelection": true,
 
     // python
     "python.defaultInterpreterPath": "/home/bars1k/base_env/bin/python",
@@ -54,7 +56,7 @@
     "emmet.includeLanguages": {
         "django-html": "html",
     },
-   
+
 
 
     // VIM - all vim setting locate in general user setting (not wsl)

@@ -48,11 +48,9 @@
     // example: here's ctrl + v -> paste text 
     // to have logic that was in vim I should change such commadn there | "vim.normalModeKeyBindingsNonRecursive": [], |
     // *** may be potential error if my keybindings json will have ctrl + character ?
-    
-
-    
+ 
     "vim.useCtrlKeys": true,  
-    "vim.overrideCopy": false, 
+    "vim.overrideCopy": true, 
     "vim.handleKeys": {
         "<C-c>": false,
         "<C-v>": false,
@@ -61,7 +59,6 @@
         "<C-z>": false,
         "<C-y>": false,
         "<C-f>": false,
-        // delete key?
         
     },
     

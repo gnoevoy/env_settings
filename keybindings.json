@@ -5,8 +5,7 @@
 
     // disable useless commands from general user settings
     // terminal and vim & terminal commands
-
-
+  
 
     // TABS =====================================================================
 
@@ -179,23 +178,12 @@
         "command": "workbench.action.openSettings"
     },
 
-
-
-
-
-
+    
     // delete last word (useful in insert mode + terminal)
-    {
-        "key": "alt+backspace",
-        "command": "-deleteWordLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
     {
         "key": "alt+backspace",
         "command": "deleteWordLeft",
         "when": "textInputFocus && !editorReadonly"
-    },
-
-
- 
+    }
+    
 ] 
