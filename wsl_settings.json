@@ -1,11 +1,10 @@
 {
     // GENERAL SETTING
-    
+    //
     // setting on apperance tab, cosmetic things
     "workbench.sideBar.location": "left",
-    "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
-    "workbench.editor.editorActionsLocation": "titleBar",
+    "workbench.editor.editorActionsLocation": "hidden",
     "workbench.startupEditor": "none",
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "none",
@@ -17,11 +16,9 @@
     "editor.renderControlCharacters": false,
     "explorer.confirmDragAndDrop": false,
     "breadcrumbs.enabled": false,
-    "window.commandCenter": false,
-    "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
     "editor.formatOnPaste": true,
-
+    //  
     // terminal settings 
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.lineHeight": 1.1,
@@ -31,35 +28,46 @@
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.suggest.enabled": true,
     "terminal.integrated.suggest.enableExtensionCompletions": true,
-    "terminal.integrated.tabs.defaultIcon": "terminal-bash",
     "terminal.integrated.cursorStyleInactive": "none",
     "terminal.integrated.cursorBlinking": false,
     "terminal.integrated.copyOnSelection": true,
-
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "workbench.panel.showLabels": false,
+    // 
+    // 
     // python
-    "python.defaultInterpreterPath": "/home/bars1k/base_env/bin/python",
-    "python.analysis.autoSearchPaths": false,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnType": true
+        "editor.formatOnSave": true
     },
-
-
-    // EXTENSIONS SETTINGS
-
-    // git lens - work with comparing git commits (not configured)
-    "gitlens.graph.layout": "editor",
-    "gitlens.graph.onlyFollowFirstParent": true,
-    "gitlens.graph.minimap.enabled": false,
-
-    // django html - didnt touched
-    "emmet.includeLanguages": {
-        "django-html": "html",
-    },
-
-
-
-    // VIM - all vim setting locate in general user setting (not wsl)
-
-   
+    //
+    //
+    // VIM SETTINGS
+    "vim.autoindent": true,
+    "vim.foldfix": true,
+    "vim.hlsearch": false,
+    "vim.leader": "space",
+    "vim.replaceWithRegister": true,
+    "vim.startInInsertMode": false,
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
+    "vim.mouseSelectionGoesIntoVisualMode": true,
+    "vim.easymotion": true,
+    "vim.smartRelativeLine": false, // relative lines while normal mode
+    "vim.highlightedyank.color": "rgba(0, 120, 215, 0.5)",
+    "vim.highlightedyank.enable": true,
+    // cursor style
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.visual": "line",
+    "vim.cursorStylePerMode.visualblock": "line",
+    "vim.cursorStylePerMode.visualline": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "underline",
+    "window.commandCenter": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    //
+    //
+    "workbench.activityBar.location": "hidden",
+    "window.menuBarVisibility": "compact",
 }

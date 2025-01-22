@@ -1,17 +1,7 @@
 [
-    // shortcuts for finder a stirng in code ?
-    // undo and redo with alt u and y - good idea
-    // copy and paste with mouse buttons?
-
-    // disable useless commands from general user settings
-    // terminal and vim & terminal commands
-  
-
-    // TABS =====================================================================
-
-
+    // EDITOR
     {
-        "key": "alt+h",     // move between tabs
+        "key": "alt+h", // move between tabs
         "command": "workbench.action.previousEditor",
         "when": "editorTextFocus"
     },
@@ -21,7 +11,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+shift+h",  // move tab left and right
+        "key": "alt+shift+h", // move tab left and right
         "command": "workbench.action.moveEditorLeftInGroup",
         "when": "editorTextFocus"
     },
@@ -31,27 +21,30 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+i",     // delete tab
+        "key": "alt+i", // delete tab
         "command": "workbench.action.closeActiveEditor",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+\\",  // slit editor
+        "key": "alt+\\", // slit editor
         "command": "workbench.action.splitEditor",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+n",  // run python code
-        "command": "python.runFile",
-        "when": "editorTextFocus"
+        "key": "alt+1",
+        "command": "workbench.action.focusFirstEditorGroup"
     },
-
-    
-    // FILE TREE =====================================================================
-
-
     {
-        "key": "alt+k",     // file tree
+        "key": "alt+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "alt+n",
+        "command": "python.execInTerminal-icon"
+    },
+    // FILE TREE =====================================================================
+    {
+        "key": "alt+k", // file tree
         "command": "workbench.view.explorer",
         "when": "!explorerViewletVisible"
     },
@@ -60,28 +53,24 @@
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "explorerViewletVisible"
     },
-    {   
-        "key": "alt+n",     // Create a new file
+    {
+        "key": "alt+n", // Create a new file
         "command": "explorer.newFile",
         "when": "explorerViewletFocus"
     },
     {
-        "key": "alt+f",  // Create a new folder
+        "key": "alt+f", // Create a new folder
         "command": "explorer.newFolder",
         "when": "explorerViewletFocus"
     },
     {
-        "key": "alt+i",  // Delete a file or folder
+        "key": "alt+i", // Delete a file or folder
         "command": "deleteFile",
         "when": "filesExplorerFocus && foldersViewVisible"
     },
-
-
     // TERMINAL =====================================================================
-
-
     {
-        "key": "alt+j",     // terminal
+        "key": "alt+j", // terminal
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "!terminalFocus"
     },
@@ -91,46 +80,43 @@
         "when": "terminalFocus"
     },
     {
-        "key": "alt+i",  // Delete terminal
+        "key": "alt+i", // Delete terminal
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
     {
-        "key": "alt+n",  // Create a new terminal session
+        "key": "alt+n", // Create a new terminal session
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
     },
     {
-        "key": "alt+m",  // Full-size terminal
+        "key": "alt+m", // Full-size terminal
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "terminalFocus"
     },
     {
-        "key": "alt+shift+l",  // Resize terminal window down
+        "key": "alt+shift+l", // Resize terminal window down
         "command": "workbench.action.terminal.resizePaneDown",
         "when": "terminalFocus"
     },
     {
-        "key": "alt+shift+h",  // Resize terminal window up
+        "key": "alt+shift+h", // Resize terminal window up
         "command": "workbench.action.terminal.resizePaneUp",
         "when": "terminalFocus"
     },
     {
-        "key": "alt+l",  // Switch to the next terminal
+        "key": "alt+l", // Switch to the next terminal
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "alt+h",  // Switch to the previous terminal
+        "key": "alt+h", // Switch to the previous terminal
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
-        
-    
     // GENERAL =====================================================================
-    
     {
-        "key": "alt+u",     // switch between editor and terminal 
+        "key": "alt+u", // switch between editor and terminal 
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
@@ -140,31 +126,27 @@
         "when": "editorFocus"
     },
     {
-        "key": "alt+1",     // left pannel
+        "key": "alt+3", // left pannel
         "command": "workbench.action.toggleActivityBarVisibility"
     },
     {
-       "key": "alt+2",      // extensions
-       "command": "workbench.view.extensions"
-    },
-    {
-       "key": "alt+3",      // menu bar
+        "key": "alt+4", // menu bar
         "command": "workbench.action.toggleMenuBar"
     },
     {
-        "key": "alt+4",  // general palette
+        "key": "alt+shift+p", // general palette
         "command": "workbench.action.showCommands"
     },
     {
-        "key": "alt+p",  // File Finder
+        "key": "alt+p", // File Finder
         "command": "workbench.action.quickOpen"
     },
     {
-        "key": "alt+o",  // Find Symbol in File
+        "key": "alt+o", // Find Symbol in File
         "command": "workbench.action.gotoSymbol"
     },
     {
-        "key": "alt+j",     // navigate in a palette
+        "key": "alt+j", // navigate in a palette
         "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen"
     },
@@ -174,16 +156,7 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "alt+,",     // setting
+        "key": "alt+,", // setting
         "command": "workbench.action.openSettings"
     },
-
-    
-    // delete last word (useful in insert mode + terminal)
-    {
-        "key": "alt+backspace",
-        "command": "deleteWordLeft",
-        "when": "textInputFocus && !editorReadonly"
-    }
-    
-] 
+]
