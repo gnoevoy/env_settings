@@ -1,0 +1,17 @@
+features:
+- terminal activate copy pasting (zsh or vim config?)
+- cycling between tab groups / delete group / move files around groups
+- terminal scroll between outputs
+- have a shotcut to change focus between file tree and editor
+- autosave and code formater with it?
+
+vscode:
+- differences between setting and where to put some features
+
+vim:
+- Esp to Caps
+- replacing text in file binding
+
+* pass vimtutor and write commands to remember them
+
+

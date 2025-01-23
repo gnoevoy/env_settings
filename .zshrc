@@ -11,18 +11,16 @@ compinit
 _comp_options+=(globdots)		
 
 
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
-
-
-# vi mode
-bindkey -v
-export KEYTIMEOUT=1
-
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -69,7 +67,10 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1] /p'
 }
 setopt PROMPT_SUBST
-PROMPT='%F{32}%n%f:%F{34}%~%f %F{11}$(parse_git_branch)%f$ '
+PROMPT='%F{10}%~%f %F{11}$(parse_git_branch)%f%F{250}$%f%b '
+
+# Autosuggestions
+source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Syntax Highlighting:
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
