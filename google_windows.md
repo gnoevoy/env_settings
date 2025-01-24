@@ -39,5 +39,3 @@ C > users > user > AppData
 | `Alt + U`       | Reload tab.                                            |
 | `Alt + M`       | Go back to the previous page.                          |
 | `Alt + Comma`   | Go forward to the next page.                           |
-
-

@@ -13,5 +13,11 @@ vim:
 - replacing text in file binding
 
 * pass vimtutor and write commands to remember them
+- vim.hlsearch - highlilgtining searched text 
+- use relative line numbers to specify number and j/k to move exatcly x times
 
 
+windows:
+FancyZones is a window manager that makes it easy to create complex window layouts and quickly position windows into those layouts.
+
+Workspaces is a desktop manager utility for launching a set of applications to custom positions and configurations with a single click. Open the editor by selecting "Launch editor" from settings or by using the shortcut ⊞ Win+Ctrl+`.
