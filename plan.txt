@@ -1,7 +1,3 @@
 * examine how formating works 
 
-* terminal suggestoin remaping key
-* have folders / files highlilgtining (color theme)
-* terminal pasting wiht p from another app doenst work
-
-* vim quick save file -> shortcut
+* terminal: shortcut to quit tab suggestion

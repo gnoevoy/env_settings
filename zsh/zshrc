@@ -20,6 +20,9 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
+# Close menu select with Escape
+bindkey -M menuselect '^[' send-break
+
 
 # QUICK NAVIGATION    =========================================
 # Use lf to switch directories and bind it to alt+o
@@ -38,6 +41,8 @@ bindkey -s '\eo' 'lfcd\n'
 # AUTOSUGGESTIONS   =========================================
 # need to change shortcut to auto filling
 source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# alt a - complete autosuggestion
+bindkey '^[a' autosuggest-accept
 
 
 # VI MODE   ========================================
@@ -67,13 +72,22 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 
+# pasting data with p
+bindkey -M vicmd 'p' copy-paste-from-clipboard
+zle -N copy-paste-from-clipboard
+copy-paste-from-clipboard() {
+    BUFFER=$(powershell.exe Get-Clipboard | tr -d '\r')
+    CURSOR=$#BUFFER
+}
+
 
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-
-export LS_COLORS=$LS_COLORS
-alias ls="ls --color=auto"
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+alias ls='ls --color'
+alias ll='ls -al'
     
 parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1] /p'
