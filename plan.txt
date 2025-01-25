@@ -1,23 +1,7 @@
-features:
-- terminal activate copy pasting (zsh or vim config?)
-- cycling between tab groups / delete group / move files around groups
-- terminal scroll between outputs
-- have a shotcut to change focus between file tree and editor
-- autosave and code formater with it?
+* examine how formating works 
 
-vscode:
-- differences between setting and where to put some features
+* terminal suggestoin remaping key
+* have folders / files highlilgtining (color theme)
+* terminal pasting wiht p from another app doenst work
 
-vim:
-- Esp to Caps
-- replacing text in file binding
-
-* pass vimtutor and write commands to remember them
-- vim.hlsearch - highlilgtining searched text 
-- use relative line numbers to specify number and j/k to move exatcly x times
-
-
-windows:
-FancyZones is a window manager that makes it easy to create complex window layouts and quickly position windows into those layouts.
-
-Workspaces is a desktop manager utility for launching a set of applications to custom positions and configurations with a single click. Open the editor by selecting "Launch editor" from settings or by using the shortcut ⊞ Win+Ctrl+`.
+* vim quick save file -> shortcut

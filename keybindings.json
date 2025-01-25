@@ -1,7 +1,12 @@
 [
-    // EDITOR
+    //
+    //
+    // EDITOR   ==================================================
+    //
+    //
     {
-        "key": "alt+h", // move between tabs
+        // move between tabs (within all groups)
+        "key": "alt+h",
         "command": "workbench.action.previousEditor",
         "when": "editorTextFocus"
     },
@@ -11,7 +16,8 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+shift+h", // move tab left and right
+        // move tab left and right (in a group)
+        "key": "alt+shift+h",
         "command": "workbench.action.moveEditorLeftInGroup",
         "when": "editorTextFocus"
     },
@@ -21,30 +27,78 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+i", // delete tab
-        "command": "workbench.action.closeActiveEditor",
+        // move tab ot left or right group
+        "key": "alt+ctrl+h",
+        "command": "workbench.action.moveEditorToPreviousGroup",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+\\", // slit editor
-        "command": "workbench.action.splitEditor",
+        "key": "alt+ctrl+l",
+        "command": "workbench.action.moveEditorToNextGroup",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+1",
-        "command": "workbench.action.focusFirstEditorGroup"
+        // Close group
+        "key": "alt+shift+i",
+        "command": "workbench.action.closeEditorsInGroup",
+        "when": "editorTextFocus"
     },
     {
-        "key": "alt+2",
-        "command": "workbench.action.focusSecondEditorGroup"
+        // delete tab
+        "key": "alt+i",
+        "command": "workbench.action.closeActiveEditor"
     },
     {
+        // Move to next / previous group
+        "key": "alt+shift+j",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+k",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        // Run python code in terminla
         "key": "alt+n",
         "command": "python.execInTerminal-icon"
     },
-    // FILE TREE =====================================================================
     {
-        "key": "alt+k", // file tree
+        // select previous / next auto suggestion
+        "key": "alt+,",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "alt+.",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        // Save file
+        "key": "alt+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        // move selected lines of code up / down
+        "key": "alt+,",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+.",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    //
+    //
+    // FILE TREE    =====================================================================
+    //
+    //
+    {
+        // Open / close File tree
+        "key": "alt+k",
         "command": "workbench.view.explorer",
         "when": "!explorerViewletVisible"
     },
@@ -54,23 +108,42 @@
         "when": "explorerViewletVisible"
     },
     {
-        "key": "alt+n", // Create a new file
+        // Switch between editor and file tree
+        "key": "alt+m",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible"
+    },
+    {
+        "key": "alt+m",
+        "command": "workbench.view.explorer",
+        "when": "editorTextFocus"
+    },
+    {
+        // Create a new file
+        "key": "alt+n",
         "command": "explorer.newFile",
         "when": "explorerViewletFocus"
     },
     {
-        "key": "alt+f", // Create a new folder
+        // Create a new folder
+        "key": "alt+f",
         "command": "explorer.newFolder",
         "when": "explorerViewletFocus"
     },
     {
-        "key": "alt+i", // Delete a file or folder
+        // Delete a file or folder
+        "key": "alt+i",
         "command": "deleteFile",
         "when": "filesExplorerFocus && foldersViewVisible"
     },
-    // TERMINAL =====================================================================
+    //
+    //
+    // TERMINAL     =====================================================================
+    //
+    //
     {
-        "key": "alt+j", // terminal
+        // terminal
+        "key": "alt+j",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "!terminalFocus"
     },
@@ -80,43 +153,8 @@
         "when": "terminalFocus"
     },
     {
-        "key": "alt+i", // Delete terminal
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+n", // Create a new terminal session
-        "command": "workbench.action.terminal.new",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+m", // Full-size terminal
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+shift+l", // Resize terminal window down
-        "command": "workbench.action.terminal.resizePaneDown",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+shift+h", // Resize terminal window up
-        "command": "workbench.action.terminal.resizePaneUp",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+l", // Switch to the next terminal
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+h", // Switch to the previous terminal
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    // GENERAL =====================================================================
-    {
-        "key": "alt+u", // switch between editor and terminal 
+        // switch between editor and terminal
+        "key": "alt+u",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
@@ -126,27 +164,122 @@
         "when": "editorFocus"
     },
     {
-        "key": "alt+3", // left pannel
+        // Delete terminal
+        "key": "alt+i",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        // Create a new terminal session
+        "key": "alt+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        // Full-size terminal
+        "key": "alt+m",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        // Resize terminal window up / down
+        "key": "alt+shift+l",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+shift+h",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+    },
+    {
+        // Switch to the next / previous terminal
+        "key": "alt+l",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        // Scroll up and down in the terminal
+        "key": "alt+.",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "alt+,",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        // Scroll by Page down / up in terminal
+        "key": "shift+alt+.",
+        "command": "workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "shift+alt+,",
+        "command": "workbench.action.terminal.scrollUpPage",
+        "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        // Scroll to the end / start of terminla session
+        "key": "ctrl+alt+.",
+        "command": "workbench.action.terminal.scrollToBottom",
+        "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+alt+,",
+        "command": "workbench.action.terminal.scrollToTopAccessibleView",
+        "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "ctrl+alt+,",
+        "command": "workbench.action.terminal.scrollToTop",
+        "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    //
+    //
+    // GENERAL =====================================================================
+    //
+    //
+    {
+        // left pannel
+        "key": "alt+1",
         "command": "workbench.action.toggleActivityBarVisibility"
     },
     {
-        "key": "alt+4", // menu bar
+        // menu bar
+        "key": "alt+2",
         "command": "workbench.action.toggleMenuBar"
     },
     {
-        "key": "alt+shift+p", // general palette
+        // Open settings (close ctrl + F4)
+        "key": "alt+3",
+        "command": "workbench.action.openSettings",
+        "when": "!settingsViewVisible"
+    },
+    {
+        // general palette
+        "key": "shift+alt+p",
         "command": "workbench.action.showCommands"
     },
     {
-        "key": "alt+p", // File Finder
+        // File Finder
+        "key": "alt+p",
         "command": "workbench.action.quickOpen"
     },
     {
-        "key": "alt+o", // Find Symbol in File
+        // Find Symbol in File
+        "key": "alt+o",
         "command": "workbench.action.gotoSymbol"
     },
     {
-        "key": "alt+j", // navigate in a palette
+        // navigate in a palette
+        "key": "alt+j",
         "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen"
     },
@@ -154,9 +287,5 @@
         "key": "alt+k",
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
-    },
-    {
-        "key": "alt+,", // setting
-        "command": "workbench.action.openSettings"
-    },
+    }
 ]

@@ -4,14 +4,19 @@ Windows doesn't allow to choose app path for installations (2 possible path):
 C > Program files
 C > users > user > AppData
 
+* Download extension PowerToys
+
 ---
 
 ### COMMANDS
 
 | Shortcut        | Description                                            |
 |-----------------|--------------------------------------------------------|
+| `Win + 1`       | Open chrome + vscode + clock                          |
 | `Alt + Tab`     | Switch between open windows.                          |
-| `Ctrl + 1, 2, 3`| Move to that tab number.                              |
+| `Alt + Caps`    | Cycle through open tabs                              |
+| `Win + left / right`    | Move tab to left or right zone                                |
+| `Win + up / down`    | Hide or full screen open tab                                |
 | `Windows + D`   | Display and hide all apps.                            |
 | `Windows`       | Open or close the Start menu.                         |
 | `Windows + I`   | Open Settings.                                         |
@@ -21,7 +26,9 @@ C > users > user > AppData
 | `Ctrl + R`      | Refresh the current window.                           |
 | `Windows + V`   | Open the clipboard history.                           |
 
+
 ---
+
 
 ### GOOGLE
 
@@ -39,3 +46,7 @@ C > users > user > AppData
 | `Alt + U`       | Reload tab.                                            |
 | `Alt + M`       | Go back to the previous page.                          |
 | `Alt + Comma`   | Go forward to the next page.                           |
+
+
+
+

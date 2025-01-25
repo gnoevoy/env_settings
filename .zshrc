@@ -2,18 +2,16 @@
 HISTSIZE=10000
 SAVEHIST=10000
 
-# Basic auto/tab complete:
+
+
+#  AUTO-TAB COMPLITION    ==========================================
+#  Double tab to open menu, hjkl - navigation
+
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-# Include hidden files.
 _comp_options+=(globdots)		
-
-
-# vi mode
-bindkey -v
-export KEYTIMEOUT=1
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -21,6 +19,31 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
+
+
+# QUICK NAVIGATION    =========================================
+# Use lf to switch directories and bind it to alt+o
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '\eo' 'lfcd\n'
+
+
+# AUTOSUGGESTIONS   =========================================
+# need to change shortcut to auto filling
+source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+# VI MODE   ========================================
+
+bindkey -v
+export KEYTIMEOUT=1
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -44,17 +67,6 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 
-# Use lf to switch directories and bind it to alt+o
-lfcd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-bindkey -s '\eo' 'lfcd\n'
 
 
 # Enable colors and change prompt:
@@ -69,8 +81,6 @@ parse_git_branch() {
 setopt PROMPT_SUBST
 PROMPT='%F{10}%~%f %F{11}$(parse_git_branch)%f%F{250}$%f%b '
 
-# Autosuggestions
-source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Syntax Highlighting:
+# SYNTAX HIGHLIGHTING   ==========================================
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

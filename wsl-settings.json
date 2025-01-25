@@ -1,14 +1,14 @@
 {
-    // GENERAL SETTING
     //
-    // setting on apperance tab, cosmetic things
+    //
+    // UI   =================================================
+    //
+    //
     "workbench.sideBar.location": "left",
     "workbench.navigationControl.enabled": false,
-    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.editorActionsLocation": "titleBar",
     "workbench.startupEditor": "none",
-    "editor.formatOnSave": true,
     "editor.renderWhitespace": "none",
-    "editor.wordWrapColumn": 160,
     "diffEditor.hideUnchangedRegions.enabled": false,
     "editor.accessibilitySupport": "off",
     "editor.minimap.enabled": false,
@@ -16,47 +16,58 @@
     "editor.renderControlCharacters": false,
     "explorer.confirmDragAndDrop": false,
     "breadcrumbs.enabled": false,
-    "editor.wordWrap": "on",
-    "editor.formatOnPaste": true,
-    //  
-    // terminal settings 
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.lineHeight": 1.1,
-    "terminal.integrated.minimumContrastRatio": 4.5,
-    "terminal.integrated.localEchoStyle": "dim",
-    "terminal.integrated.fontWeightBold": "bold",
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.suggest.enabled": true,
-    "terminal.integrated.suggest.enableExtensionCompletions": true,
-    "terminal.integrated.cursorStyleInactive": "none",
-    "terminal.integrated.cursorBlinking": false,
-    "terminal.integrated.copyOnSelection": true,
-    "workbench.layoutControl.enabled": false,
     "chat.commandCenter.enabled": false,
     "workbench.panel.showLabels": false,
-    // 
-    // 
-    // python
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "hidden",
+    //
+    //
+    // EDITOR   =============================================
+    //
+    //
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.wordWrapColumn": 240,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true
     },
+    "json.format.keepLines": true,
+    "editor.wordWrap": "on",
     //
     //
-    // VIM SETTINGS
+    // TERMINAL   =================================================
+    //
+    //
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.localEchoStyle": "dim",
+    "terminal.integrated.fontWeightBold": "bold",
+    "terminal.integrated.cursorStyleInactive": "none",
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.suggest.quickSuggestions": false,
+    "terminal.integrated.stickyScroll.enabled": true,
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.tabs.enabled": false,
+    //
+    //
+    // VIM   =============================================
+    //
+    //
     "vim.autoindent": true,
     "vim.foldfix": true,
-    "vim.hlsearch": false,
     "vim.leader": "space",
     "vim.replaceWithRegister": true,
     "vim.startInInsertMode": false,
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
-    "vim.mouseSelectionGoesIntoVisualMode": true,
     "vim.easymotion": true,
-    "vim.smartRelativeLine": false, // relative lines while normal mode
+    "vim.smartRelativeLine": true,
     "vim.highlightedyank.color": "rgba(0, 120, 215, 0.5)",
     "vim.highlightedyank.enable": true,
+    //
     // cursor style
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.visual": "line",
@@ -64,10 +75,20 @@
     "vim.cursorStylePerMode.visualline": "line",
     "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.replace": "underline",
-    "window.commandCenter": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
     //
+    // default commands and copy pasting
+    "vim.useCtrlKeys": true,
+    "vim.overrideCopy": true,
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-a>": false,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-y>": false,
+        "<C-f>": false,
+    },
     //
-    "workbench.activityBar.location": "hidden",
-    "window.menuBarVisibility": "compact",
+    //
 }
