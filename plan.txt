@@ -1,3 +1,8 @@
 * examine how formating works 
 
 * terminal: shortcut to quit tab suggestion
+
+
+# vim learning
+1. create and update file with commands
+2. create a python script to auto generate sections in random order (commands as well)
