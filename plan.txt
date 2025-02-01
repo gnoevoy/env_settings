@@ -1,8 +1,3 @@
-* examine how formating works 
+- move terminal up and down -> not necessrty, quite useless featureim or windows clipboard history
 
-* terminal: shortcut to quit tab suggestion
-
-
-# vim learning
-1. create and update file with commands
-2. create a python script to auto generate sections in random order (commands as well)
+- cant use delete and backspace when ctrl a in vim

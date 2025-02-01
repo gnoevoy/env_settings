@@ -1,3 +1,25 @@
-    {
-        "window.menuBarVisibility": "compact"
-    }
+{
+    // VIM
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            // move half page up / donw in noraml mode
+            "before": [ "<C-j>" ],
+            "commands": [ "cursorPageDown" ]
+        },
+        {
+            "before": [ "<C-k>" ],
+            "commands": [ "cursorPageUp" ]
+        }
+    ],
+    // Keybindings in Vim modes
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] },
+        { "before": [ ">" ], "commands": [ "editor.action.indentLines" ] },
+    ],
+
+    "workbenh.activityBar.location": "hidden",
+    "window.menuBarVisibility": "compact"
+
+
+}

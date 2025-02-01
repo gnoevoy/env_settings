@@ -50,7 +50,7 @@
     "terminal.integrated.suggest.quickSuggestions": false,
     "terminal.integrated.stickyScroll.enabled": true,
     "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.tabs.enabled": true,
     //
     //
     // VIM   =============================================
@@ -79,7 +79,7 @@
     //
     // default commands and copy pasting
     "vim.useCtrlKeys": true,
-    "vim.overrideCopy": true,
+    "vim.overrideCopy": false,
     "vim.handleKeys": {
         "<C-c>": false,
         "<C-v>": false,
@@ -90,5 +90,11 @@
         "<C-f>": false,
     },
     //
-    //
+    // django templates
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
+
 }
+
+
