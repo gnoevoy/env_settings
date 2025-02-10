@@ -1,0 +1,6 @@
+INSERT MODE
+ctrl w - delete to the end of word
+ctrl u - delete to the beginning of a line
+
+VISUAL MODE
+o - change direction of selction 
