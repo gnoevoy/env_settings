@@ -1,3 +1,0 @@
-- move terminal up and down -> not necessrty, quite useless featureim or windows clipboard history
-
-- cant use delete and backspace when ctrl a in vim

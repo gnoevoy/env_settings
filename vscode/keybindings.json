@@ -50,12 +50,12 @@
     },
     {
         // Move to next / previous group
-        "key": "alt+shift+j",
+        "key": "ctrl+l",
         "command": "workbench.action.focusPreviousGroup",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+shift+k",
+        "key": "ctrl+h",
         "command": "workbench.action.focusNextGroup",
         "when": "editorTextFocus"
     },
