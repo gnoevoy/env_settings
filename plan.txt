@@ -1,0 +1,7 @@
+1. removed ctrl f search 
+2. added fold and unfold command 
+3. added navigation between terminal and terminla tabs
+    - cant find command to reorder tabs in terminal
+
+
+*** See git commits changes in a file

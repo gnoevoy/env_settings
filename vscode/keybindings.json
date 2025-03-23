@@ -91,6 +91,18 @@
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // fold / unfold functions
+    {
+        "key": "alt+[",
+        "command": "editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+]",
+        "command": "editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+
     //
     //
     // FILE TREE    =====================================================================
@@ -204,6 +216,17 @@
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
+    // switch between terminal and terminal tabs
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.terminal.focus",
+        "when": "terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.terminal.focusTabs",
+        "when": "terminalFocus && terminalHasBeenCreated"
+    },
     {
         // Scroll up and down in the terminal
         "key": "alt+.",
@@ -293,4 +316,16 @@
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
     },
+    // Other stuff
+    {
+        "key": "ctrl+f",
+        "command": "-workbench.action.terminal.focusFind",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+
 ]
