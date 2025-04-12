@@ -8,56 +8,57 @@
         // move between tabs (within all groups)
         "key": "alt+h",
         "command": "workbench.action.previousEditor",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
         "key": "alt+l",
         "command": "workbench.action.nextEditor",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
-        // move tab left and right (in a group)
+        // move tab left / right (in a group)
         "key": "alt+shift+h",
         "command": "workbench.action.moveEditorLeftInGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
         "key": "alt+shift+l",
         "command": "workbench.action.moveEditorRightInGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
-        // move tab ot left or right group
+        // move tab to left or right group
         "key": "alt+ctrl+h",
         "command": "workbench.action.moveEditorToPreviousGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
         "key": "alt+ctrl+l",
         "command": "workbench.action.moveEditorToNextGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
-        // Close group
+        // close group
         "key": "alt+shift+i",
         "command": "workbench.action.closeEditorsInGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
         // delete tab
         "key": "alt+i",
-        "command": "workbench.action.closeActiveEditor"
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorFocus || editorIsOpen"
     },
     {
-        // Move to next / previous group
+        // move to the next / previous group
         "key": "ctrl+l",
         "command": "workbench.action.focusPreviousGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
         "key": "ctrl+h",
         "command": "workbench.action.focusNextGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
         // Run python code in terminal
@@ -65,7 +66,7 @@
         "command": "python.execInTerminal-icon"
     },
     {
-        // select previous / next variable suggestion
+        // select previous / next variable suggestion in pop up widget
         "key": "alt+q",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
@@ -77,6 +78,7 @@
     },
     {
         // move selected lines of code up / down
+        // weird behavior when moving lines in visual mode -> cursor stays at the same place
         "key": "alt+,",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
@@ -96,8 +98,8 @@
     // FILE TREE    =====================================================================
     //
     //
-    // up and down j and k
-    // fold / unfold h and l
+    // Navigation: up and down with j and k, fold / unfold h and l
+    // doesnt exist option to move selected fiels or folders to another location
     {
         // Open / close File tree
         "key": "alt+k",
@@ -118,7 +120,7 @@
     {
         "key": "alt+m",
         "command": "workbench.view.explorer",
-        "when": "editorTextFocus"
+        "when": "editorFocus || editorIsOpen"
     },
     {
         // Create a new file
@@ -138,16 +140,23 @@
         "command": "deleteFile",
         "when": "filesExplorerFocus && foldersViewVisible"
     },
+    {
+        // collapse all folders in a file tree
+        "key": "alt+,",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "explorerViewletFocus"
+    },
     //
     //
     // TERMINAL     =====================================================================
     //
     //
+    // Vscode doesnt have an option to move terminal tabs up and down (like code tabs left / right)
     {
-        // terminal
+        // open / close terminal
         "key": "alt+j",
         "command": "workbench.action.terminal.toggleTerminal",
-        "when": "!terminalFocus"
+        "when": "!terminalFocus && !explorerViewletFocus"
     },
     {
         "key": "alt+j",
@@ -239,7 +248,7 @@
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
     {
-        // Scroll to the end / start of terminla session
+        // Scroll to the end / start of terminal session
         "key": "ctrl+alt+.",
         "command": "workbench.action.terminal.scrollToBottom",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
@@ -286,7 +295,7 @@
         "command": "workbench.action.gotoSymbol"
     },
     {
-        // navigate in a palette
+        // navigate in a pallete
         "key": "alt+j",
         "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen"
@@ -307,6 +316,31 @@
     },
     //
     // COPILOT 
+    // inline suggestions
+    {
+        // autocomplete word by word
+        "key": "alt+;",
+        "command": "editor.action.inlineSuggest.acceptNextWord",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-editor.action.inlineSuggest.acceptNextWord",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        // remove autosuggestion
+        "key": "alt+/",
+        "command": "editor.action.inlineSuggest.hide",
+        "when": "inlineSuggestionVisible"
+    },
+    {
+        // trigger suggestion
+        "key": "alt+\\",
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "editorFocus"
+    },
+    // chat
     // /clear deletes the chat history
     {
         // open / hide chat
@@ -314,6 +348,7 @@
         "command": "workbench.panel.chat",
         "when": "workbench.panel.chat.view.copilot.active"
     },
+    //
     //
     // Other stuff
     {
@@ -331,5 +366,9 @@
         "command": "-github.copilot.nextPanelSolution",
         "when": "github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
     },
-
+    {
+        "key": "ctrl+j",
+        "command": "-extension.vim_ctrl+j",
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
 ]

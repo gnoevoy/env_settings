@@ -102,12 +102,10 @@
 
     },
     // can disable complitions and trigger by shorcut
-    "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.nextEditSuggestions.enabled": false,
     "github.copilot.editor.enableCodeActions": false,
+    "editor.inlineSuggest.showToolbar": "never",
 }
-
-
 
 
 
