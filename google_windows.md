@@ -4,7 +4,6 @@
 |-----------------|--------------------------------------------------------|
 | `Win + 1`       | Open chrome + vscode + clock                          |
 | `Alt + Tab`     | Switch between open windows.                          |
-| `Alt + Caps`    | Cycle through open tabs                              |
 | `Win + left / right`    | Move tab to left or right zone                                |
 | `Win + up / down`    | Hide or full screen open tab                                |
 | `Windows + D`   | Display and hide all apps.                            |

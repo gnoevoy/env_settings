@@ -2,14 +2,14 @@
     // VIM
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            // move half page up / donw in noraml mode
+            // move half page up / donw in normal mode
             "before": [ "<C-j>" ],
             "commands": [ "cursorPageDown" ]
         },
         {
             "before": [ "<C-k>" ],
             "commands": [ "cursorPageUp" ]
-        }
+        },
     ],
     // Keybindings in Vim modes
     "vim.visualModeKeyBindings": [
@@ -19,7 +19,45 @@
     ],
 
     "workbenh.activityBar.location": "hidden",
-    "window.menuBarVisibility": "compact"
-
-
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.activityBar.location": "hidden",
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.iconTheme": "vscode-simpler-icons",
+    "codeium.enableCodeLens": false,
+    "remote.autoForwardPortsSource": "hybrid",
+    //
+    // COPILOT
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true
+    },
+    //
+    // GITLENS
+    "gitlens.hovers.currentLine.over": "line",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "window.menuBarVisibility": "compact",
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.blame.avatars": false,
+    "gitlens.blame.highlight.locations": [
+        "gutter",
+        "line"
+    ],
+    "gitlens.changes.locations": [
+        "line",
+        "overview",
+        "gutter"
+    ],
+    "gitlens.heatmap.locations": [
+        "overview",
+        "gutter"
+    ],
+    "gitlens.mode.statusBar.enabled": false,
+    "workbench.colorTheme": "Dark Modern One without italics"
 }

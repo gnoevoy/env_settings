@@ -1,7 +1,4 @@
-1. removed ctrl f search 
-2. added fold and unfold command 
-3. added navigation between terminal and terminla tabs
-    - cant find command to reorder tabs in terminal
-
-
-*** See git commits changes in a file
+git commits - GitLens:
+1. How to watch previos commits (compare with current file) for file
+2. Compare specifc commits
+3. Watch changes in current file (commit)

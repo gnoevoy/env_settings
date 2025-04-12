@@ -60,12 +60,12 @@
         "when": "editorTextFocus"
     },
     {
-        // Run python code in terminla
+        // Run python code in terminal
         "key": "alt+n",
         "command": "python.execInTerminal-icon"
     },
     {
-        // select previous / next auto suggestion
+        // select previous / next variable suggestion
         "key": "alt+q",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
@@ -91,23 +91,13 @@
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
-    // fold / unfold functions
-    {
-        "key": "alt+[",
-        "command": "editor.fold",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "alt+]",
-        "command": "editor.unfold",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-
     //
     //
     // FILE TREE    =====================================================================
     //
     //
+    // up and down j and k
+    // fold / unfold h and l
     {
         // Open / close File tree
         "key": "alt+k",
@@ -148,7 +138,6 @@
         "command": "deleteFile",
         "when": "filesExplorerFocus && foldersViewVisible"
     },
-    // Navigation in foldre tree: up / down -> j k ; open close folder -> h l
     //
     //
     // TERMINAL     =====================================================================
@@ -216,8 +205,8 @@
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
-    // switch between terminal and terminal tabs
     {
+        // switch between terminal and tabs
         "key": "ctrl+alt+h",
         "command": "workbench.action.terminal.focus",
         "when": "terminalTabsFocus"
@@ -316,6 +305,16 @@
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
     },
+    //
+    // COPILOT 
+    // /clear deletes the chat history
+    {
+        // open / hide chat
+        "key": "ctrl+alt+i",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    //
     // Other stuff
     {
         "key": "ctrl+f",
@@ -326,6 +325,11 @@
         "key": "ctrl+f",
         "command": "-actions.find",
         "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "alt+]",
+        "command": "-github.copilot.nextPanelSolution",
+        "when": "github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
     },
 
 ]
