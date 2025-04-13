@@ -6,7 +6,7 @@
     //
     "workbench.sideBar.location": "left",
     "workbench.navigationControl.enabled": false,
-    "workbench.editor.editorActionsLocation": "titleBar",
+    "workbench.editor.editorActionsLocation": "hidden",
     "workbench.startupEditor": "none",
     "editor.renderWhitespace": "none",
     "diffEditor.hideUnchangedRegions.enabled": false,
@@ -18,9 +18,12 @@
     "breadcrumbs.enabled": false,
     "chat.commandCenter.enabled": false,
     "workbench.panel.showLabels": false,
-    "workbench.layoutControl.enabled": false,
-    "window.commandCenter": false,
     "workbench.activityBar.location": "hidden",
+    "workbench.iconTheme": "vscode-simpler-icons",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.titleBarStyle": "custom",
+    "workbench.editor.enablePreview": false,
+    "remote.autoForwardPortsSource": "hybrid",
     //
     //
     // EDITOR   =============================================
@@ -31,7 +34,8 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
-        "editor.formatOnPaste": true
+        "editor.formatOnPaste": true,
+        "diffEditor.ignoreTrimWhitespace": false
     },
     "black-formatter.args": [ "--line-length", "160" ],
     "editor.wordWrap": "on",
@@ -51,61 +55,68 @@
     "terminal.integrated.stickyScroll.enabled": true,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    //
+    //
+    // COPILOT
+    //
+    //
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.editor.enableCodeActions": false,
+    "editor.inlineSuggest.showToolbar": "never",
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true
+    },
     //
     //
     // VIM   =============================================
     //
     //
-    "vim.autoindent": true,
-    "vim.foldfix": true,
-    "vim.leader": "space",
-    "vim.replaceWithRegister": true,
+    "vim.changeWordIncludesWhitespace": false,
     "vim.startInInsertMode": false,
-    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
     "vim.visualstar": true,
-    "vim.easymotion": true,
+    "vim.autoindent": true,
+    "vim.hlsearch": false,
+    "vim.leader": "space",
     "vim.smartRelativeLine": true,
-    "vim.highlightedyank.color": "rgba(0, 120, 215, 0.5)",
-    "vim.highlightedyank.enable": true,
-    //
+    "editor.cursorSurroundingLines": 6,
+    "vim.easymotion": false,
     // cursor style
     "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.visual": "line",
     "vim.cursorStylePerMode.visualblock": "line",
     "vim.cursorStylePerMode.visualline": "line",
-    "vim.cursorStylePerMode.normal": "block",
-    "vim.cursorStylePerMode.replace": "underline",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    //
-    // default commands and copy pasting
-    "vim.useCtrlKeys": true,
-    "vim.overrideCopy": false,
+    // disable default keybindings
     "vim.handleKeys": {
         "<C-c>": false,
         "<C-v>": false,
-        "<C-a>": false,
         "<C-s>": false,
         "<C-z>": false,
         "<C-y>": false,
-        "<C-f>": false,
         "<Del>": false,
         "<BS>": false
     },
+    // copy-pasting and clipboard
+    "vim.overrideCopy": true,
+    "vim.useSystemClipboard": true,
+    // yanking and highlighting
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(0, 120, 215, 0.5)",
+    // Stay in visual mode while indenting
+    "vim.visualModeKeyBindings": [
+        { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] },
+        { "before": [ ">" ], "commands": [ "editor.action.indentLines" ] },
+    ],
     //
-    // django templates
-    "emmet.includeLanguages": {
-        "django-html": "html",
-    },
     //
-    // COPILOT
-    "github.copilot.advanced": {
-
-    },
-    // can disable complitions and trigger by shorcut
-    "github.copilot.nextEditSuggestions.enabled": false,
-    "github.copilot.editor.enableCodeActions": false,
-    "editor.inlineSuggest.showToolbar": "never",
+    // OTHER STUFF   =============================================
+    //
+    //
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
 }
-
-
-
