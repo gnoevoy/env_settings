@@ -1,5 +1,7 @@
 # Windows Productivity Configuration
 
+<br>
+
 ## Keyboard Shortcuts
 
 | Shortcut         | Action / Description                       |
@@ -22,7 +24,7 @@
 - To use `H`, `J`, `K`, `L` for window management, need to **disable `Win + L`** (lock screen) in Windows and add an **AutoHotkey** script. 
 - `Ctrl + 1` opens a custom workspace when configured via **PowerToys** using **FancyZones** and **Workspace**.
 
----
+<br>
 
 ## Disable `Win + L` for Vim-style Motions
 
@@ -35,32 +37,36 @@
 
 [View the original instruction on Microsoft Answers](https://answers.microsoft.com/en-us/windows/forum/all/how-i-can-disable-the-function-window-key-l-used/fdb6696e-eb2f-4115-a79d-771b7e0bb496)
 
----
+<br>
 
 ## PowerToys Setup
 
-PowerToys enhances your productivity by allowing you to remap keys, split windows the way you want, and manage multiple tasks with keyboard shortcuts.
+This app allows you to remap keys, open several apps with one click, and set up window layouts.
 
 1. Install PowerToys from the [Microsoft Store](https://apps.microsoft.com/store/detail/powertoys/XP89DCGQ3K6VLD)
 2. **Keyboard Manager** – Remap `Escape` to `Caps Lock`  
-   ![Remap Caps Lock to Escape](img/remap_escape.png)
-3. **FancyZones** – Create a 2-zone layout with 30/70 split and margin  
+
+   ![Remap Caps Lock to Escape](https://github.com/gnoevoy/env_settings/blob/main/img/remap_escape.png)
+
+3. **FancyZones** – Create a 2-zone layout with a 30/70 split and margin  
 4. **Workspaces** – Auto-launch apps (VSCode, Chrome, Clock) with `Ctrl + 1`
 
----
+<br>
 
 ## AutoHotkey Setup
 
-AutoHotkey lets you remap Vim-style shortcuts, enabling navigation with `H`, `J`, `K`, `L` for easier window management.
+This app allows you to create shortcuts (used for Vim-style navigation).
 
 1. Download AutoHotkey, [autohotkey.com](https://www.autohotkey.com/)
-2. Run `script.ahk` at startup: `Win + R` -> `shell:startup` -> add file to folder
+2. Run `script.ahk` at startup: `Win + R` -> `shell:startup` -> add the file to the folder
 
----
+<br>
 
 ## Appearance Settings
 
-1. Disable animations when minimizing and maximizing windows: setting -> adjust the appearance and performance of windows  
-    ![Disable animations](img/disable_animations.png)
+1. Disable animations when minimizing and maximizing windows: Settings -> Adjust the appearance and performance of windows  
+
+   ![Disable animations](https://github.com/gnoevoy/env_settings/blob/main/img/disable_animations.png)
+
 2. Black background, blue accent color
 3. Get rid of unnecessary apps/functions from the taskbar and main screen

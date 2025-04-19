@@ -10,7 +10,8 @@
 ; Hide selected tab -> win + j 
 ; Open the most recent hidden tab -> win + ,
 
-global MinimizedWindows := []  ; Stack to track minimized windows (last-in, first-out)
+; Stack to track minimized windows (last-in, first-out)
+global MinimizedWindows := []
 
 #j::{ 
     hwnd := WinGetID("A")
