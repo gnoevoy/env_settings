@@ -41,7 +41,7 @@
 
 ## PowerToys Setup
 
-This app allows you to remap keys, open several apps with one click, and set up window layouts.
+This app allows you to remap keys, open several apps with one click, and set up layout grid.
 
 1. Install PowerToys from the [Microsoft Store](https://apps.microsoft.com/store/detail/powertoys/XP89DCGQ3K6VLD)
 2. **Keyboard Manager** – Remap `Escape` to `Caps Lock`  
@@ -50,6 +50,8 @@ This app allows you to remap keys, open several apps with one click, and set up 
 
 3. **FancyZones** – Create a 2-zone layout with a 30/70 split and margin  
 4. **Workspaces** – Auto-launch apps (VSCode, Chrome, Clock) with `Ctrl + 1`
+
+   ![auto launch apps](https://github.com/gnoevoy/env_settings/blob/main/img/workspace.png)
 
 <br>
 
@@ -64,7 +66,7 @@ This app allows you to create shortcuts (used for Vim-style navigation).
 
 ## Appearance Settings
 
-1. Disable animations when minimizing and maximizing windows: Settings -> Adjust the appearance and performance of windows  
+1. Disable animations when minimizing and maximizing windows: `Settings` -> `Adjust the appearance and performance of windows` 
 
    ![Disable animations](https://github.com/gnoevoy/env_settings/blob/main/img/disable_animations.png)
 
