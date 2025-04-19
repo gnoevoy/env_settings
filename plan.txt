@@ -1,4 +1,6 @@
-git commits - GitLens:
-1. How to watch previos commits (compare with current file) for file
-2. Compare specifc commits
-3. Watch changes in current file (commit)
+1. update windows shortcuts with autohotkey
+2. add link to removing win + l shortcuts
+3. power toys settings as well
+4. update chrome commands
+5. more structured setting repo
+6. windows performance settings
