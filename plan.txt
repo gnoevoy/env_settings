@@ -1,3 +1,42 @@
-vscode
-- working with git
-- jupyter notebook
+GIT
+
+** Whats my real needs?
+1. Look at file history and add changes to current file (file name the same, not removed one)
+2. Restore file to specific commit 
+
+------------------------
+
+
+1. Compare current file with previous commits
+    - diff them (changins reflects in current file)
+2. Open file at specific commit 
+
+its possible to achive with these extensions
+
+https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-git-history
+
+'Git: Open File at Commit' // Open the current file at particular commit in time
+'Git: Open File at Commit to the Side' // Open the current file, to the side, at particular commit in time
+'Git: Diff File at Commit' // View the changes made to the current file in a particular commit in time
+'Git: Diff File at Commit against Current' // View the changes made to the current file between now and a particular commit in time
+'Git: Restore File at Commit' // Restore the content of the current file at particular commit in time
+
+https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-diff
+
+"diff.exclude": null, // An array of globs to exclude, unless specificed it uses the "files.exclude" setting
+"diff.ignore": [".gitignore"], // An array of names for .gitignore-like files to use
+"diff.include": ["**/*"], // An array of globs to include
+"diff.showUntitledFiles": true, // Whether to show untitled files in the selector or not
+"diff.showOpenFiles": true, // Whether to show open files at the top of the selector or not
+"diff.showFoundFiles": true, // Whether to show other found files in the selector or not
+"diff.showFoundRelativeFiles": false // Whether to show other found files, using relative paths, in the selector or not
+
+
++ Git histroy - very good solution but without shortcuts (only mouse selectio but more powerful)
+https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
+
+
+LINUX
+1. Why we use it
+2. Most important features and functional
+3. Configuration

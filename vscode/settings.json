@@ -18,7 +18,6 @@
     "breadcrumbs.enabled": false,
     "chat.commandCenter.enabled": false,
     "workbench.panel.showLabels": false,
-    "workbench.activityBar.location": "hidden",
     "workbench.iconTheme": "vscode-simpler-icons",
     "security.workspace.trust.untrustedFiles": "open",
     "window.titleBarStyle": "custom",
@@ -119,4 +118,5 @@
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
     "window.menuBarVisibility": "compact",
+    "workbench.activityBar.location": "hidden",
 }
