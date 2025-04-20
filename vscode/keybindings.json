@@ -63,7 +63,8 @@
     {
         // Run python code in terminal
         "key": "alt+n",
-        "command": "python.execInTerminal-icon"
+        "command": "python.execInTerminal-icon",
+        "when": "!notebookEditorFocused && !notebookCellEditorFocused"
     },
     {
         // select previous / next variable suggestion in pop up widget
@@ -350,7 +351,96 @@
     },
     //
     //
+    // JUPYTER NOTEBOOK
+    //
+    //
+    // cant find shortcut to move selected cells up / down (not patricular one) + clear output for them
+    {
+        // run selected cells
+        "key": "alt+n",
+        "command": "notebook.cell.execute",
+        "when": "notebookEditorFocused"
+    },
+    {
+        // execute cell and all below
+        "key": "ctrl+alt+n",
+        "command": "notebook.cell.executeCellAndBelow",
+        "when": "notebookEditorFocused"
+    },
+    {
+        // run all cells
+        "key": "shift+alt+n",
+        "command": "notebook.execute",
+        "when": "config.notebook.globalToolbar && !notebookHasSomethingRunning || config.notebook.globalToolbar && notebookInterruptibleKernel && !notebookHasSomethingRunning || config.notebook.globalToolbar && !notebookHasSomethingRunning && !notebookInterruptibleKernel"
+    },
+    {
+        // delete selected cells
+        "key": "ctrl+i",
+        "command": "notebook.cell.delete",
+        "when": "notebookEditorFocused"
+    },
+    {
+        // create new code cell
+        "key": "ctrl+n",
+        "command": "notebook.cell.insertCodeCellBelow",
+        "when": "notebookEditorFocused"
+    },
+    {
+        // create new markdown cell
+        "key": "ctrl+m",
+        "command": "notebook.cell.insertMarkdownCellBelow",
+        "when": "config.notebook.globalToolbarShowLabel && notebookEditable && config.notebook.globalToolbarShowLabel != 'never' && config.notebook.insertToolbarLocation != 'betweenCells' && config.notebook.insertToolbarLocation != 'hidden'"
+    },
+    {
+        // move cell up / down (work only for single cell)
+        "key": "ctrl+k",
+        "command": "notebook.cell.moveUp",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "notebook.cell.moveDown",
+        "when": "notebookEditorFocused"
+    },
+    {
+        // clear output for cell
+        "key": "ctrl+o",
+        "command": "notebook.cell.clearOutputs",
+        "when": "notebookEditorFocused"
+    },
+    {
+        // clear all cells output
+        "key": "ctrl+alt+o",
+        "command": "notebook.clearAllCellsOutputs",
+        "when": "config.notebook.globalToolbar && notebookKernelCount > 0 || config.notebook.globalToolbar && notebookKernelSourceCount > 0"
+    },
+    {
+        // switch between editor and notebook modes, can be achived with enterd / esc
+        "key": "ctrl+u",
+        "command": "notebook.cell.focus",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "notebook.cell.edit",
+        "when": "notebookEditorFocused"
+    },
+    {
+        // select cell above / below
+        "key": "shift+j",
+        "command": "list.expandSelectionDown",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "shift+k",
+        "command": "list.expandSelectionUp",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    },
+    //
+    //
     // Other stuff
+    //
+    //
     {
         "key": "ctrl+f",
         "command": "-workbench.action.terminal.focusFind",
@@ -370,5 +460,19 @@
         "key": "ctrl+j",
         "command": "-extension.vim_ctrl+j",
         "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+    {
+        "key": "d d",
+        "command": "-notebook.cell.delete",
+        "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "shift+l",
+        "command": "-notebook.toggleLineNumbers",
+        "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
     },
 ]
