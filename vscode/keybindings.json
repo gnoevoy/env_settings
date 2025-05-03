@@ -433,9 +433,35 @@
     },
     //
     //
-    // GIT 
+    // GIT and Local History
     //
     //
+    {
+        // File history in git, can view and compare current and previous versions of the file
+        "key": "shift+alt+]",
+        "command": "git.viewFileHistory"
+    },
+    {
+        // Local history finder
+        "key": "shift+alt+o",
+        "command": "workbench.action.localHistory.restoreViaPicker",
+        "when": "config.workbench.localHistory.enabled"
+    },
+    {
+        // Restore deleted file finder
+        // Helpful when you know file name and date of commit since git history cant open deleted file
+        "key": "shift+alt+[",
+        "command": "workbench.action.localHistory.restoreViaPicker",
+        "when": "config.workbench.localHistory.enabled"
+    },
+    // Diff Editor
+    // Cant revert changes (command diffEditor.revert) from previous file version (issue: https://github.com/microsoft/vscode/issues/225879)
+    {
+        // switch sides in diff editor
+        "key": "ctrl+j",
+        "command": "diffEditor.switchSide",
+        "when": "inDiffEditor"
+    },
     {
         "key": "ctrl+f",
         "command": "-workbench.action.terminal.focusFind",
@@ -477,5 +503,9 @@
     {
         "key": "ctrl+t",
         "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "alt+h",
+        "command": "-git.viewFileHistory"
     },
 ]

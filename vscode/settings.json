@@ -9,14 +9,12 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.startupEditor": "none",
     "editor.renderWhitespace": "none",
-    "diffEditor.hideUnchangedRegions.enabled": false,
     "editor.accessibilitySupport": "off",
     "editor.minimap.enabled": false,
     "editor.stickyScroll.enabled": false,
     "editor.renderControlCharacters": false,
     "explorer.confirmDragAndDrop": false,
     "breadcrumbs.enabled": false,
-    "chat.commandCenter.enabled": false,
     "workbench.panel.showLabels": false,
     "workbench.iconTheme": "vscode-simpler-icons",
     "security.workspace.trust.untrustedFiles": "open",
@@ -111,12 +109,33 @@
     ],
     //
     //
+    // GIT AND FILE HISTORY 
+    //
+    //
+    "gitHistory.details.hash.enabled": true,
+    "gitHistory.showFileHistorySplit": false,
+    "diffEditor.renderSideBySide": true,
+    //
+    //
+    // DBT
+    //
+    //
+    "files.associations": {
+        "*.sql": "jinja-sql",
+        "**/target/**": ""
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    //
+    //
     // OTHER STUFF   =============================================
     //
     //
     "git.openRepositoryInParentFolders": "never",
-    "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
     "window.menuBarVisibility": "compact",
     "workbench.activityBar.location": "hidden",
 }

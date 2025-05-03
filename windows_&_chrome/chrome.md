@@ -26,4 +26,3 @@ Chrome default shorcuts: [Docs](https://support.google.com/chrome/answer/157179?
 | `Ctrl + F`         | Open finder                        |
 | `Alt + E`          | Open Chrome Downloads (`chrome://downloads`)           |
 | `Alt + W`          | Open Chrome History (`chrome://history`)               |
-
