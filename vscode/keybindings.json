@@ -286,6 +286,11 @@
         "when": "!settingsViewVisible"
     },
     {
+        // Hide / show Status bar
+        "key": "alt+4",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
         // general palette
         "key": "shift+alt+p",
         "command": "workbench.action.showCommands"
