@@ -1,5 +1,8 @@
 ﻿#Requires AutoHotkey v2.0
 
+; close window with win + I
+#i::Send "!{F4}"
+
 ; Move selected tab left / right -> win + h / ;
 #h::Send("{LWin Down}{Left}{LWin Up}") 
 #l::Send("{LWin Down}{Right}{LWin Up}") 
@@ -36,10 +39,3 @@ global MinimizedWindows := []
 #HotIf WinActive("ahk_class XamlExplorerHostIslandWindow")  
 !h::Send("{Blind}{Left}")   
 !l::Send("{Blind}{Right}")  
-
-
-
-
-
-
-

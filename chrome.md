@@ -1,8 +1,9 @@
-## Chrome Shortcuts
+## Chrome
 
-Extension to create custom shortcuts: [Keyboard Shortcuts](https://chromewebstore.google.com/detail/keyboard-shortcuts/lplcmnhgijkkmflbmhabnccgelffpnog?hl=en-US&utm_source=ext_sidebar)
+** Browser works out of the box (settigns are saved in cloud)
 
-Chrome default shorcuts: [Docs](https://support.google.com/chrome/answer/157179?hl=en&co=GENIE.Platform%3DDesktop#zippy)
+1. Extension to create custom shortcuts: [Keyboard Shortcuts](https://chromewebstore.google.com/detail/keyboard-shortcuts/lplcmnhgijkkmflbmhabnccgelffpnog?hl=en-US&utm_source=ext_sidebar)
+2. Chrome default shorcuts: [Docs](https://support.google.com/chrome/answer/157179?hl=en&co=GENIE.Platform%3DDesktop#zippy)
 
 <br>
 

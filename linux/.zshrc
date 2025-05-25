@@ -4,6 +4,9 @@
 HISTSIZE=10000
 SAVEHIST=10000
 
+# Python
+alias python="python3"
+alias pip="pip3"
 
 # ----------------------------------------------------------------------------------------
 
@@ -33,10 +36,9 @@ bindkey -M menuselect '\e' send-break
 
 # AUTOSUGGESTIONS
 
-# need to change shortcut to auto filling
 source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alt a - complete autosuggestion
-bindkey '^[a' autosuggest-accept
+bindkey '^[a' autosuggest-accept 
 
 
 # ----------------------------------------------------------------------------------------
@@ -81,17 +83,18 @@ copy-paste-from-clipboard() {
 
 
 # DBT
-
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
-source ~/.dbt-completion.bash
+source ~/.zsh-plugins/.dbt-completion.bash
 
 
 # ----------------------------------------------------------------------------------------
 
 
 # STYLING
+
+# Syntax highlighting 
+source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -106,6 +109,5 @@ parse_git_branch() {
 }
 setopt PROMPT_SUBST
 PROMPT='%F{2}%~%f %F{11}$(parse_git_branch)%f%F{250}$%f%b '
-
 
 
