@@ -286,7 +286,6 @@
         "when": "!settingsViewVisible"
     },
     {
-        // Hide / show Status bar
         "key": "alt+4",
         "command": "workbench.action.toggleStatusbarVisibility"
     },

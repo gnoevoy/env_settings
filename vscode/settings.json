@@ -138,4 +138,5 @@
     "chat.commandCenter.enabled": false,
     "window.menuBarVisibility": "compact",
     "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
 }
