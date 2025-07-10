@@ -1,4 +1,4 @@
-**Quickest set up for Dev**
+**Windows set up for Dev**
 
 1. Settings
 - Display: select monitor, adjust hz
@@ -43,6 +43,7 @@ At the end update Windows
 4. VSCode
 - Install extensions: Python, Docker, Jupyter, WSL, Copilot, Git History, DBT, Rainbow CSV
 - Copy settings.json and keybindings.json from repo
+- Copy github repos 
 
 <br>
 
@@ -50,19 +51,3 @@ At the end update Windows
 - Install: Chrome, Logitech Hub, Telegram, Docker, Excel
 - Remove: Antivirus
 - Startapps: Docker, Logitech Hub
-
-<br>
-
-4. Shortcuts
-
-| `Win`            | Finder                            |
-| `Win + O`        | Close Tab                           |
-| `Win + D`        | Hide / Unhide all tabs               |
-| `Win + E`        | Open Folders               |
-| `Win + I`        | Open Settings               |
-| `Alt + Tab`      | Open tab selection panel                   |
-| `Alt + left / right`      | Select tab from panel                   |
-| `Win + arrows`      | Move tab                   |
-
-
-
