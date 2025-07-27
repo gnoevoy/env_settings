@@ -1,6 +1,6 @@
-**Windows set up for Dev**
+# Windows set up for Dev
 
-1. Settings
+## 1. Settings
 - Display: select monitor, adjust hz
 - Battery: set timeouts to "never" + turn on energy saver
 - Appearance: dark mode, black background, turn off dynamic lighting
@@ -12,14 +12,14 @@ At the end update Windows
 
 <br>
 
-2. Power Toys
+## 2. Power Toys
 - Disable animations: `adjust the appearance and performance of Windows` -> turn off second option
 - Fancy Zones: Override Windows Snap (Zone index)
 - Keyboard Manager: Remap Escape to Caps Lock + Alt F4 to Win O
 
 <br>
 
-3. Linux
+## 3. Linux
 - Windows Features: activate `Virtual Machine Platform` and `Windows Subsystem for Linux`
 - Install WSL + Ubuntu with troubleshooting: https://www.youtube.com/watch?v=CcwNTmOxOdI&t=544s
 - Update system and install Python:
@@ -40,14 +40,14 @@ At the end update Windows
 
 <br>
 
-4. VSCode
+## 4. VSCode
 - Install extensions: Python, Docker, Jupyter, WSL, Copilot, Git History, DBT, Rainbow CSV
 - Copy settings.json and keybindings.json from repo
 - Copy github repos 
 
 <br>
 
-5. Programs
+## 5. Programs
 - Install: Chrome, Logitech Hub, Telegram, Docker, Excel
 - Remove: Antivirus
 - Startapps: Docker, Logitech Hub

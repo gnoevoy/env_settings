@@ -95,6 +95,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
+        // Comment selected code
         "key": "alt+w",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
@@ -105,7 +106,8 @@
     //
     //
     // Navigation: up and down with j and k, fold / unfold h and l
-    // doesnt exist option to move selected fiels or folders to another location
+    // doesnt exist option to move selected files / folders to another location
+    //
     {
         // Open / close File tree
         "key": "alt+k",
@@ -158,6 +160,7 @@
     //
     //
     // Vscode doesnt have an option to move terminal tabs up and down (like code tabs left / right)
+    //
     {
         // open / close terminal
         "key": "alt+j",
@@ -286,6 +289,7 @@
         "when": "!settingsViewVisible"
     },
     {
+        // bottom bar
         "key": "alt+4",
         "command": "workbench.action.toggleStatusbarVisibility"
     },
@@ -325,8 +329,12 @@
         "command": "-workbench.action.quickOpen"
     },
     //
-    // COPILOT 
-    // inline suggestions
+    //
+    // COPILOT =====================================================================
+    //
+    //
+    // Inline suggestions
+    //
     {
         // autocomplete word by word
         "key": "alt+;",
@@ -346,12 +354,14 @@
     },
     {
         // trigger suggestion
-        "key": "alt+\\",
+        "key": "alt+'",
         "command": "editor.action.inlineSuggest.trigger",
         "when": "editorFocus"
     },
-    // chat
-    // /clear deletes the chat history
+    //
+    // Chat
+    // /clear command deletes a chat
+    // 
     {
         // open / hide chat
         "key": "ctrl+alt+i",
@@ -364,7 +374,7 @@
     //
     //
     // Editor mode -> Enter, escape go to nobetbook mode
-    // Cant find shortcut to move selected cells up / down (not patricular one) + clear output for them
+    // Cant find shortcut to move selected cells up / down (not patricular one) + clear selected cells
     {
         // run selected cells
         "key": "alt+n",
@@ -458,24 +468,21 @@
         "command": "workbench.action.localHistory.restoreViaPicker",
         "when": "config.workbench.localHistory.enabled"
     },
+    //
     // Diff Editor
     // Cant revert changes (command diffEditor.revert) from previous file version (issue: https://github.com/microsoft/vscode/issues/225879)
+    //
     {
         // switch sides in diff editor
         "key": "ctrl+j",
         "command": "diffEditor.switchSide",
         "when": "inDiffEditor"
     },
-    {
-        "key": "ctrl+f",
-        "command": "-workbench.action.terminal.focusFind",
-        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+f",
-        "command": "-actions.find",
-        "when": "editorFocus || editorIsOpen"
-    },
+    //
+    //
+    // Removed commands (vscode writes it at the end of the file)
+    //
+    //
     {
         "key": "alt+]",
         "command": "-github.copilot.nextPanelSolution",
@@ -513,3 +520,5 @@
         "command": "-git.viewFileHistory"
     },
 ]
+
+

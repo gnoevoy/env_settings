@@ -1,4 +1,6 @@
-| Windows Shortcuts             | Action                          |
+## Windows
+
+| Shortcut             | Action                          |
 |----------------------|----------------------------------|
 | `Win`                | Finder                           |
 | `Win + O`            | Close Tab                        |
@@ -6,12 +8,14 @@
 | `Win + E`            | Open Folders                     |
 | `Win + I`            | Open Settings                    |
 | `Alt + Tab`          | Open tab selection panel         |
-| `Alt + Left / Right` | Select tab from panel            |
+| `Alt + Tab and Shift` | Select next / previos tab from panel            |
 | `Win + Arrows`       | Move tab                         |
 
 <br>
 
-| Chrome Shortcuts           | Action                                             |
+## Google Chrome
+
+| Shortcut           | Action                                             |
 |--------------------|---------------------------------------------------------|
 | `Alt + H / L`          | Select next / previous tab                                     |
 | `Alt + J / K`          | Move current tab left / right                                   |
@@ -21,8 +25,7 @@
 | `Alt + O`          | Duplicate current tab                                   |
 | `Alt + P`          | Pin / Unpin current tab                                 |
 | `Alt + U`          | Reload tab                                              |
-| `Alt + M`          | Go back                                                 |
-| `Alt + ,`          | Go forward                                              |
+| `Alt + M / ,`          | Go back / forward (like ctrl z / ctrl y)                                                 |
 | `Ctrl + N`         | Open new window                                         |
 | `Alt + F`         | New incognito window                                         |
 | `Ctrl + Shift + T` | Reopen last closed tab(s)                               |

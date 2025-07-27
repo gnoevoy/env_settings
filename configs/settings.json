@@ -93,6 +93,7 @@
         "<C-s>": false,
         "<C-z>": false,
         "<C-y>": false,
+        "<C-f>": false,
         "<Del>": false,
         "<BS>": false
     },
@@ -138,5 +139,6 @@
     "chat.commandCenter.enabled": false,
     "window.menuBarVisibility": "compact",
     "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": false,
 }
+
+
