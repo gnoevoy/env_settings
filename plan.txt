@@ -1,0 +1,74 @@
+Env set up for work
+Aim: be good at daily work, constant side project (productivity topic)
+
+Build repo with setting, commands and shortcuts
+Create based on notes a pdf files for quick refresh / revisit
+Additional challanges besides learning 
+
+--------------------------------
+
+Windows Machine
+
+Browser Chrome
+
+Text / Code Editing
+- Vim Motions
+- Microsoft editors: Notes, DAX, Power Query M, Excel formulas 
+- Touch Typing 
+
+Programs
+- Power BI  & Excel (both including Power Query)
+- VS Code
+
+? AI  (workign with prompts, productive usage)
+
+---------------------------------
+
+windows general: https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec#windowsversion=windows_11
+windows general 2: https://www.cnet.com/tech/computing/windows-11-expert-keyboard-shortcut-list/
+
+power query M: https://gorilla.bi/power-query/advanced-editor-keyboard-shortcuts/
+power query M 2: https://xxlbi.com/blog/pq-advanced-editor-keyboard-shortcuts/
+
+minda power query UI: https://www.myonlinetraininghub.com/power-query-keyboard-shortcuts-to-save-time
+minda power query general: https://d13ot9o61jdzpp.cloudfront.net/files/Power%20Query%20Shortcuts%20%E2%80%A2%20My%20Online%20Training%20Hub.pdf
+
+power bi UI microsoft: https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-accessibility-keyboard-shortcuts
+power bi UI: https://www.claydesk.com/wp-content/uploads/2019/08/Power-BI.pdf
+power bi UI 2: https://sumproduct.com/blog/power-bi-blog-keyboard-shortcuts/
+
+dax: https://medium.com/@rganesh0203/all-power-bi-dax-shortcuts-9c4d33077804
+dax 2: https://easyinsight.co.uk/insights/12-essential-keyboard-shortcuts-for-writing-dax-code-in-power-bi/
+minda dax: https://d13ot9o61jdzpp.cloudfront.net/files/DAX%20Editor%20Keyboard%20Shortcuts%20%E2%80%A2%20My%20Online%20Training%20Hub.pdf
+
+excel microsoft: https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f
+minda excel: https://d13ot9o61jdzpp.cloudfront.net/files/239%20Excel%20Shortcuts%20for%20Windows%20-%20MyOnlineTrainingHub.pdf
+excel general: https://www.excelcampus.com/shortcuts/
+
+touch typing (improve numbers, special symbols): https://monkeytype.com/
+
+chrome google: https://support.google.com/chrome/answer/157179?hl=en&co=GENIE.Platform%3DDesktop
+chrome 2: https://clickup.com/blog/chrome-shortcuts/
+chrome github: https://gist.github.com/ravikyada/caf36f6dafd6c229796d79d6331434e6
+chrome 3: https://www.dca.ca.gov/about_us/kbs_chrome.shtml
+
+---------------
+
+? Structure
+
+Text & Code
+    - touch typing
+    - Vim Motions in VS Code
+    - General Windows 
+    - DAX, Power Query M, Excel formulas
+
+Tools (for each file with info)
+    - Power BI
+    - Excel
+    - Power Query
+    - VS Code
+    - Chrome
+
+Windows Machine
+
+AI prompts and tools ? 
