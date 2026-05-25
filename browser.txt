@@ -1,0 +1,41 @@
+ctrl + n            new window
+ctrl + shift + n    new incognito window
+ctrl + t            new tab
+
+
+ctrl + shift + t    reopen closed tab
+moving between tabs: already have
+
+Ctrl + number  -> specific tab
+Ctrl + 9 -> Last tab
+moving history: already have
+
+Alt + F or Alt + E -> Chrome menu
+
+Ctrl + Shift + B -> Show/hide bookmarks bar
+Ctrl + H -> History page
+
+Ctrl + F -> Search in page
+Tab / Shift + Tab -> Move between options in a dialog or webpage
+
+Developer Tool - Ctrl + Shift + J
+Alt + Shift + N -> Open a split view
+
+Ctrl + L -> address bar
+
+reload page: already have
+
+Ctrl + O -> Open file from my PC
+Ctrl + plus / minus -> Zoom in / out
+Ctrl + 0 -> Reset zoom level
+
+Ctrl + D -> Open downloads (custom shortcut)
+
+Home / End -> Move to the beginning / end of the page
+
+
+??? Open the Downloads page in a new tab	Ctrl + j 
+
+-----------------------------
+
+Working with AI (Chat GPT)
