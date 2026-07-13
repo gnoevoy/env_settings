@@ -1,0 +1,134 @@
+-------------------------------------------------------------------------------------
+
+WORKBOOK MANAGEMENT
+Ctrl + N                  -> Create new workbook
+Ctrl + O                  -> Open workbook
+Ctrl + S                  -> Save workbook
+F12                       -> Save As
+Ctrl + P                  -> Print workbook
+Ctrl + W                  -> Close workbook
+Ctrl + Tab                -> Switch between open workbooks
+
+NAVIGATION
+Ctrl + Page Up            -> Previous worksheet
+Ctrl + Page Down          -> Next worksheet
+Shift + F11              -> Insert new worksheet
+Ctrl + Arrow              -> Jump to edge of current data region
+Ctrl + Home               -> Go to beginning of worksheet (A1)
+Ctrl + End                -> Go to last used cell
+Page Up                   -> Move one screen up
+Page Down                 -> Move one screen down
+
+Alt + ↓                   -> Open filter / data validation drop-down
+
+SELECTION
+Ctrl + A                  -> Select current region / entire worksheet
+Ctrl + Shift + Arrow      -> Extend selection to edge of data
+Ctrl + Space              -> Select entire column
+Shift + Space             -> Select entire row
+Ctrl + Backspace          -> Return to active cell after scrolling
+Ctrl + .                  -> Move to next corner of selection
+Shift + Enter             -> Previous cell within selection
+Shift + Tab               -> Previous column within selection
+
+CELL EDITING & DATA ENTRY
+F2                        -> Edit active cell
+Enter                     -> Next cell in column
+Shift + Enter             -> Previous cell in column
+Tab                       -> Next cell in row
+Shift + Tab               -> Previous cell in row
+Alt + Enter               -> Insert line break inside cell
+Ctrl + D                  -> Fill Down
+Ctrl + R                  -> Fill Right
+Ctrl + ;                  -> Insert current date
+Ctrl + Shift + :          -> Insert current time
+
+CLIPBOARD
+Ctrl + C                  -> Copy
+Ctrl + X                  -> Cut
+Ctrl + V                  -> Paste
+Ctrl + Shift + V          -> Paste values only
+
+FORMATTING
+Ctrl + B                  -> Bold
+Ctrl + I                  -> Italic
+Ctrl + 1                  -> Format Cells dialog
+F4                        -> Repeat previous action / formatting
+Ctrl + Shift + ~          -> General format
+Ctrl + Shift + $          -> Currency format
+Ctrl + Shift + %          -> Percentage format
+Ctrl + Shift + #          -> Date format
+Ctrl + Shift + !          -> Number format
+Ctrl + Shift + &          -> Apply outline border
+Ctrl + Shift + _          -> Remove outline border
+
+TABLES
+Ctrl + T                  -> Create Excel Table
+Ctrl + Shift + L          -> Toggle filters
+Ctrl + Shift + T          -> Toggle Total Row
+
+FIND & REPLACE
+Ctrl + F                  -> Find
+Ctrl + H                  -> Find and Replace
+Shift + F4                -> Find next match (after entering value in Find window)
+Ctrl + Shift + F4         -> Find previous match (after entering value in Find window)
+
+FORMULAS
+F4                        -> Toggle absolute / relative references
+F9                        -> Calculate workbook
+Shift + F9                -> Calculate active worksheet
+Ctrl + `                  -> Show / Hide formulas
+Ctrl + A                  -> Function Arguments dialog (inside formula)
+
+ROWS & COLUMNS
+Ctrl + Shift + +          -> Insert cells / rows / columns
+Ctrl + -                  -> Delete cells / rows / columns
+
+COMMENTS
+Shift + F2                -> Add / Edit comment (note)
+Ctrl + Shift + F2         -> Add / Edit threaded comment
+
+CHARTS
+Alt + F1                  -> Create chart on current worksheet
+Ctrl + 1                  -> Format selected chart
+
+PIVOT TABLES & QUERIES
+Alt + F5                  -> Refresh selected Pivot Table / Query
+Ctrl + Alt + F5           -> Refresh all connections
+
+GROUPING & OUTLINE
+Alt + Shift + →           -> Group rows / columns
+Alt + Shift + ←           -> Ungroup rows / columns
+Ctrl + 8                  -> Show / Hide outline symbols
+
+RIBBON & USER INTERFACE
+Alt + Q                   -> Search bar
+Alt + F, T                -> Open Excel Options
+Ctrl + F1                 -> Show / Hide Ribbon
+Ctrl + Shift + U          -> Expand / Collapse Formula Bar
+Alt                       -> Activate Ribbon shortcuts (KeyTips)
+Left / Right Arrow        -> Move between Ribbon tabs
+Shift + F10               -> Open context menu (right-click)
+Ctrl + 6                  -> Show / Hide objects 
+
+DATA VALIDATION
+Alt + ↓                   -> Open validation list / drop-down
+
+POWER QUERY
+Alt + F12                 -> Open Power Query Editor
+
+ZOOM
+Ctrl + Alt + +            -> Zoom in (version dependent)
+Ctrl + Alt + -            -> Zoom out (version dependent)
+
+NOTES / VERIFY
+Ctrl + 1                  -> Also formats charts, shapes and other objects
+Ctrl + A                  -> Opens Function Arguments only while editing a formula
+Alt + F3                  -> Creates names from selection (not Name Box)
+Ctrl + Shift + V          -> Available only in newer Excel versions
+
+Ctrl + F3        -> Open Name Manager
+F3               -> Paste Named Range into formula
+Alt + F3         -> Create Names from Selection
+
+Ctrl + 1         -> Open Format Chart Area / Format Object dialog
