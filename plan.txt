@@ -1,2 +1,13 @@
-1. Excel -> UI shortctus, editing & tips (beyong formulas and functions)
-2. VS Code -> UI shortcuts + Vim motions
+not so important compare to concepts and tools files
+
+chnage linux installaiton and file
+
+remember vim motions and keyboard shortcuts for vscode (update them)
+
+vs code
+- default settings and capabilities of text editing in vs code
+
+- git & diff panes
+- vim motions 
+- jupyter notebook configurations
+- dbt & sql configurations
