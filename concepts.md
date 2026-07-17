@@ -9,3 +9,16 @@ cover chat
 
 
 
+data types
+data structures (list, dictionary, table)
+operations with data structures and values manipulations
+logical operations
+values operations
+math
+calculations
+
+
+
+
+
+
