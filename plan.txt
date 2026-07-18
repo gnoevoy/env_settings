@@ -1,13 +1,7 @@
-not so important compare to concepts and tools files
+1. add description for power bi (dax) and dbt
+2. make a structure for concepts 
+3. revisit vim motions and set up for vs code (settins.json & keybinding.json)
 
-chnage linux installaiton and file
-
-remember vim motions and keyboard shortcuts for vscode (update them)
-
-vs code
-- default settings and capabilities of text editing in vs code
-
-- git & diff panes
-- vim motions 
-- jupyter notebook configurations
-- dbt & sql configurations
+- linux terminla instructions also
+slowly remember and imporve: git, jupyter notebook, dbt & sql 
++ plus general vscode set up
