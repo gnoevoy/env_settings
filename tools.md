@@ -195,27 +195,3 @@ Programming (Python) will be covered sooner wiht standart Software Engiinering t
 Not a neccessity for Data Analytics 
 
 (Python, Linux, Git, Docker, different libraries and concepts)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
