@@ -1,7 +1,124 @@
-1. add description for power bi (dax) and dbt
-2. make a structure for concepts 
-3. revisit vim motions and set up for vs code (settins.json & keybinding.json)
+1. Set up basic vscode shortcuts and commands (text editing , navigation, terminal)
+2. Move on to advanced features as AI prompt, git, jupyternotebook, terminal-linux helpers, sql & dbt
+3. cover windows set up as well as linux machine
 
-- linux terminla instructions also
-slowly remember and imporve: git, jupyter notebook, dbt & sql 
-+ plus general vscode set up
+
+---------------
+
+next occurence of word  -> ctrl + shift + d 
+{
+  "key": "ctrl+shift+d",
+  "command": "editor.action.addSelectionToNextFindMatch",
+  "when": "editorFocus"
+}
+
+select all occurences of selected text (ctrl + shift + L)
+{
+  "key": "ctrl+shift+l",
+  "command": "editor.action.selectHighlights",
+  "when": "editorFocus"
+}
+
+all occurences of word -> ctrl + F2
+{
+  "key": "ctrl+f2",
+  "command": "editor.action.changeAll",
+  "when": "editorTextFocus && !editorReadonly"
+}
+
+Find & Replace dialog boxes
+ctrl + f -> find dialog box
+ctrl + shift + h -> replace dialog box
+{
+  "key": "ctrl+shift+h",
+  "command": "editor.action.startFindReplaceAction",
+  "when": "editorFocus || editorIsOpen"
+}
+{
+  "key": "ctrl+f",
+  "command": "actions.find",
+  "when": "editorFocus || editorIsOpen"
+}
+
+in dialog boxes
+alt + Enter -> select all occurenes of finded values
+{
+  "key": "alt+enter",
+  "command": "search.action.openInEditor",
+  "when": "hasSearchResult && searchViewletFocus"
+}
+
+alt + C -> match case
+{
+  "key": "alt+c",
+  "command": "toggleSearchEditorCaseSensitive",
+  "when": "inSearchEditor && searchInputBoxFocus"
+}
+
+alt + W -> match whole word (exact expression)
+{
+  "key": "alt+w",
+  "command": "toggleSearchEditorWholeWord",
+  "when": "inSearchEditor && searchInputBoxFocus"
+}
+
+alt + Z -> toggle word wrap 
+{
+  "key": "alt+z",
+  "command": "editor.action.toggleWordWrap"
+}
+
+---
+
+ctrl + space -> trigger suggestion (variables, functions etc.. )
+{
+  "key": "ctrl+space",
+  "command": "editor.action.triggerSuggest",
+  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+}
+
+ctrl + shift + space -> trigger paramets hints (for functions , classes)
+{
+  "key": "ctrl+shift+space",
+  "command": "editor.action.triggerParameterHints",
+  "when": "editorHasSignatureHelpProvider && editorTextFocus"
+}
+
+---------
+
+Focus into Editor Group on the Left - workbench.action.focusLeftGroup (not configured)
+Focus into Editor Group on the Right - workbench.action.focusRightGroup
+workbench.action.files.newUntitledFile (create new file) should be not ctrl + N
+close all editors workbench.action.closeAllEditors - not assigned
+not assiged show extensions (workbench.view.extensions)
+open setting alt + 3 or ctrl + ,
+keyboard shortctus ctrk k ctrl s
+select them ctrl k + ctrl t 
+
+-----------
+
+Zoom in or zoom out editor
+ctrl + plus / minus
+{
+  "key": "ctrl+=",
+  "command": "workbench.action.zoomIn"
+}
+{
+  "key": "ctrl+-",
+  "command": "workbench.action.zoomOut"
+}
+
+
+ctrl + shift + v -> toggle markdown previos (for md formats)
+{
+  "key": "ctrl+shift+v",
+  "command": "markdown.togglePreview",
+  "when": "!terminalFocus && activeCustomEditorId == 'vscode.markdown.preview.editor' || editorFocus && !notebookEditorFocused && !terminalFocus && resourceLangId =~ /^(markdown|prompt|instructions|chatagent|skill)$/"
+}
+
+----
+
+ctrl + alt + I -> open / close chat 
+ctlr + I -> inline chat 
+
+*need to figur out how works suggestions (ai), chat and inline mode + shortcuts
