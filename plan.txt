@@ -1,44 +1,20 @@
-1. Set up basic vscode shortcuts and commands (text editing , navigation, terminal)
-2. Move on to advanced features as AI prompt, git, jupyternotebook, terminal-linux helpers, sql & dbt
-3. cover windows set up as well as linux machine
+VSCode: 
+- cover basic shortcuts
+- vim motions
+- and AI prompt with suggestions
+- git & docker & jupyternobebook ???  
+
+Linux Machine terminal settins as well
+
+Chrome prompt
+
 
 
 ---------------
 
-next occurence of word  -> ctrl + shift + d 
-{
-  "key": "ctrl+shift+d",
-  "command": "editor.action.addSelectionToNextFindMatch",
-  "when": "editorFocus"
-}
-
-select all occurences of selected text (ctrl + shift + L)
-{
-  "key": "ctrl+shift+l",
-  "command": "editor.action.selectHighlights",
-  "when": "editorFocus"
-}
-
-all occurences of word -> ctrl + F2
-{
-  "key": "ctrl+f2",
-  "command": "editor.action.changeAll",
-  "when": "editorTextFocus && !editorReadonly"
-}
-
 Find & Replace dialog boxes
 ctrl + f -> find dialog box
 ctrl + shift + h -> replace dialog box
-{
-  "key": "ctrl+shift+h",
-  "command": "editor.action.startFindReplaceAction",
-  "when": "editorFocus || editorIsOpen"
-}
-{
-  "key": "ctrl+f",
-  "command": "actions.find",
-  "when": "editorFocus || editorIsOpen"
-}
 
 in dialog boxes
 alt + Enter -> select all occurenes of finded values
@@ -62,27 +38,9 @@ alt + W -> match whole word (exact expression)
   "when": "inSearchEditor && searchInputBoxFocus"
 }
 
-alt + Z -> toggle word wrap 
-{
-  "key": "alt+z",
-  "command": "editor.action.toggleWordWrap"
-}
 
 ---
 
-ctrl + space -> trigger suggestion (variables, functions etc.. )
-{
-  "key": "ctrl+space",
-  "command": "editor.action.triggerSuggest",
-  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
-}
-
-ctrl + shift + space -> trigger paramets hints (for functions , classes)
-{
-  "key": "ctrl+shift+space",
-  "command": "editor.action.triggerParameterHints",
-  "when": "editorHasSignatureHelpProvider && editorTextFocus"
-}
 
 ---------
 

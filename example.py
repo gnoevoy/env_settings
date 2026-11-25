@@ -5,6 +5,7 @@ from collections import defaultdict
 
 datetime.isoweekday()
 
+sum(1,2,3)
 
 @dataclass
 class Sale_class:
@@ -21,39 +22,39 @@ class Sale_class:
 
 
 sales = [
-    Sale_class(2, "ob", "Mouse", 2, 25.00, datetime(2025, 1, 6)),
-    Sale_class(3, "Alice", "Keyboard", 1, 80.00, datetime(2025, 1, 7)),
     Sale_class(4, "Chris", "Monitor", 2, 320.00, datetime(2025, 1, 8)),
-    Sale_class(5, "Bob", "Laptop", 1, 1150.00, datetime(2025, 1, 10)),
     Sale_class(7, "Eve", "Webcam", 1, 85.00, datetime(2025, 1, 12)),
+    Sale_class(2, "ob", "Mouse", 2, 25.00, datetime(2025, 1, 6)),
     Sale_class(6, "Dana", "Headphones", 3, 150.00, datetime(2025, 1, 11)),
+    Sale_class(3, "Alice", "Keyboard", 1, 80.00, datetime(2025, 1, 7)),
+    Sale_class(5, "Bob", "Laptop", 1, 1150.00, datetime(2025, 1, 10)),
 ]
 
 
-def total_revenue(data_val: list[Sale_class]) -> float:
-    return sum(s.revenue for s in data_val)
+def total_revenue(data: list[Sale_class]) -> float:
+    return sum(s.revenue for s in data)
 
 
-def revenue_by_customer(data_val: list[Sale_class]) -> dict[str, float]:
+def revenue_by_customer(data: list[Sale_class]) -> dict[str, float]:
     result = defaultdict(float)
 
-    for sale in data_val:
+    for sale in data:
         result[sale.customer] += sale.revenue
 
     return dict(result)
 
 
-def top_customer(data_val: list[Sale_class]) -> tuple[str, float]:
-    customer_sales = revenue_by_customer(data_val)
+def top_customer(data: list[Sale_class]) -> tuple[str, float]:
+    customer_sales = revenue_by_customer(data)
     return max(customer_sales.items(), key=lambda x: x[1])
 
 
-def average_order_value(data_val: list[Sale_class]) -> float:
-    return mean(s.revenue for s in data_val)
+def average_order_value(data: list[Sale_class]) -> float:
+    return mean(s.revenue for s in data)
 
 
-def filter_large_orders(data_val: list[Sale_class], threshold: float) -> list[Sale_class]:
-    return [sale for sale in data_val if sale.revenue >= threshold]
+def filter_large_orders(data: list[Sale_class], threshold: float) -> list[Sale_class]:
+    return [sale for sale in data if sale.revenue >= threshold]
 
 
 def print_summary(data: list[Sale_class]) -> None:
